@@ -1,10 +1,10 @@
 services:
   - type: web
-    name: SAINI TXT DIRECT 
+    name: SAVE RESTRICT CONTENT BOT 
     plan: free
     env: docker
     dockerfilePath: Dockerfile
-    repo: https://github.com/nikhilsainiop/Saini-txt-direct
+    repo: https://github.com/Suman9382/Save-Restricted-Content-Bot-v3
     branch: main
     autoDeploy: false
     envVars:
