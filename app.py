@@ -3,16 +3,15 @@
 # See LICENSE file in the repository root for full license text.
 
 import os
-from flask import Flask, render_template
+from flask import Flask
+import os
 
 app = Flask(__name__)
 
 @app.route("/")
-def welcome():
-    # Render the welcome page with animated "Team SPY" text
-    return render_template("welcome.html")
+def home():
+    return "Bot Running Successfully!"
 
 if __name__ == "__main__":
-    # Default to port 5000 if PORT is not set in the environment
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 8000))
     app.run(host="0.0.0.0", port=port)
